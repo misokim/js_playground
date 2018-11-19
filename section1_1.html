@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>두 수를 입력받아 4칙연산의 결과를 표시해 봅시다.</h1>
+
+  <script>
+    var input1 = prompt("첫번째 숫자를 입력해주세요");
+    var input2 = prompt("두번째 숫자를 입력해주세요");
+
+    var num1 = Number(input1);
+    var num2 = Number(input2);
+
+    var resultPlus = num1+num2;
+    var resultMinus = num1-num2;
+    var resultMultiply = num1*num2;
+    var resultDivision = num1/num2;
+
+
+    var return_plus = input1 + "+" + input2 + "의 결과는 " + resultPlus + "입니다. <br/>"
+    document.write(return_plus)
+
+    var return_minus = input1 + "-" + input2 + "의 결과는 " + resultMinus + "입니다. <br/>"
+    document.write(return_minus)
+
+    var return_multiply = input1 + "*" + input2 + "의 결과는 " + resultMultiply + "입니다. <br/>"
+    document.write(return_multiply)
+
+    var return_division = input1 + "/" + input2 + "의 결과는 " + resultDivision + "입니다. <br/>"
+    document.write(return_division)
+
+  </script>
+</body>
+</html>

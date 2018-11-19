@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>BMI를 계산하는 프로그램을 작성해 봅시다.</h1>
+
+  <script>
+    var inputStature = prompt("키를 입력해주세요");
+    var inputWeight = prompt("몸무게를 입력해주세요");
+
+    var stature = Number(inputStature);
+    var weight = Number(inputWeight);
+    var stature2 = stature/100;
+
+    var bmi = weight/(stature2*stature2);
+
+
+
+    var result = "당신의 BMI는 " + bmi + "입니다. <br/>"
+    document.write(result)
+
+    console.log("inputStature:",inputStature)
+    console.log("inputWeight:",inputWeight)
+    console.log("stature:",stature)
+    console.log("weight:",weight)
+    console.log("stature2:",stature2)
+    console.log("bmi:",bmi)
+
+  </script>
+</body>
+</html>
